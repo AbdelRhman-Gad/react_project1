@@ -1,0 +1,27 @@
+.star .line {
+  width: 80px;
+  height: 4px;
+  background-color: #2c3d4f;
+}
+
+h2 {
+  color: #2c3d4f;
+}
+
+.contact-section {
+  height: 100vh;
+}
+
+#portfolio .item {
+  border-radius: 8px;
+}
+
+#portfolio .item .layer {
+  background-color: #19bc9bd0;
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+#portfolio .item:hover .layer {
+  opacity: 1;
+}
