@@ -48,28 +48,30 @@ export default function Portfolio() {
           </div>
         </section>
       </div>
-      {/* Bootstrap Modal */}
-      <div
-        className="modal fade"
-        id="imageModal"
-        tabIndex="-1"
-        aria-labelledby="imageModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered modal-lg">
-          <div className="modal-content">
-            <div className="modal-body p-0">
-              {selectedImage && (
-                <img
-                  src={selectedImage}
-                  alt="Enlarged"
-                  className="img-fluid w-100"
-                />
-              )}
+      <section>
+        {/* Bootstrap Modal */}
+        <div
+          className="modal fade"
+          id="imageModal"
+          tabIndex="-1"
+          aria-labelledby="imageModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content">
+              <div className="modal-body p-0">
+                {selectedImage && (
+                  <img
+                    src={selectedImage}
+                    alt="Enlarged"
+                    className="img-fluid w-100"
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
