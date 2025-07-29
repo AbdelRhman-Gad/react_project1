@@ -20,7 +20,7 @@ export default function Portfolio() {
         <section className="d-flex justify-content-center">
           <div className="text-center">
             <h2 className="text-uppercase pt-5 fs-1 fw-bolder">
-              portfolio components
+              portfolio component
             </h2>
             <div className="star d-flex align-items-center justify-content-center py-3">
               <div className="line me-3"></div>
