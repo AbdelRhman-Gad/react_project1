@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import folio1 from "../../assets/images/poert1.png";
 import folio2 from "../../assets/images/port2.png";
 import folio3 from "../../assets/images/port3.png";
+import { Modal } from "bootstrap";
 import "./Portfolio.css";
 export default function Portfolio() {
   let [selectedImage, setSelectedImage] = useState(null);
@@ -10,9 +11,7 @@ export default function Portfolio() {
 
   let handleImageClick = (img) => {
     setSelectedImage(img);
-    let modal = new window.bootstrap.Modal(
-      document.getElementById("imageModal")
-    );
+    let modal = new Modal(document.getElementById("imageModal"));
     modal.show();
   };
   return (
